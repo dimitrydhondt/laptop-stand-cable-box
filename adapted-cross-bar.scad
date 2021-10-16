@@ -38,13 +38,14 @@ difference() {
             ct_cube([profile_width/2, bar_width - profile_width * 4, h2 - 30]);
     }
     
-    translate([55,0,0]) cable_entry();
+//    translate([55,0,0]) cable_entry();
     translate([45,0,0]) cable_entry();
-    translate([35,0,0]) cable_entry();
-    
+//    translate([35,0,0]) cable_entry();
+/*    
     translate([0,-10,0]) rotate(90,[0,0,1]) cable_entry();
     translate([0,0,0]) rotate(90,[0,0,1]) cable_entry();
     translate([0,10,0]) rotate(90,[0,0,1]) cable_entry();
+    */
 }
 
 // For testing dimensions visually
@@ -58,8 +59,7 @@ module cable_entry() {
         rotate(90,[0,1,0])
             rotate(90,[1,0,0])
                 minkowski() {
-                    
-                    ct_cube([h2, 1 , bar_width]);
+                    ct_cube([h2, 20 , bar_width]);
                     cylinder(r=(cable_w - 1) / 2);
                 }    
 }
