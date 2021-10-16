@@ -38,14 +38,8 @@ difference() {
             ct_cube([profile_width/2, bar_width - profile_width * 4, h2 - 30]);
     }
     
-//    translate([55,0,0]) cable_entry();
     translate([45,0,0]) cable_entry();
-//    translate([35,0,0]) cable_entry();
-/*    
-    translate([0,-10,0]) rotate(90,[0,0,1]) cable_entry();
-    translate([0,0,0]) rotate(90,[0,0,1]) cable_entry();
-    translate([0,10,0]) rotate(90,[0,0,1]) cable_entry();
-    */
+    translate([0,0,10]) rotate(90,[0,0,1]) cable_entry();
 }
 
 // For testing dimensions visually
